@@ -1,0 +1,15 @@
+{
+  "name": "trends-ecommerce-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Web.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Trends-Ecommerce-Website"
+  },
+  "author": "Rahul Kumar Jain",
+  "license": "ISC"
+}
