@@ -18,11 +18,11 @@
             </div>
             <ul>
                 <li>
-                    <a id="home">Home</a>
-                    <a id="shops">Shops</a>
-                    <a id="blog">Blog</a>
-                    <a id="about">About</a>
-                    <a id="contact">Contact</a>
+                    <a id="home" onclick="homes()">Home</a>
+                    <a id="shop" onclick="shops()">Shops</a>
+                    <a id="blog" onclick="blogs()">Blog</a>
+                    <a id="about" onclick="abouts()">About</a>
+                    <a id="contact" onclick="contacts()">Contact</a>
                     <i class="fa-sharp fa-solid fa-cart-shopping"></i>
 
                 </li>
@@ -49,7 +49,7 @@
             </div>
             <div class="card">
                 <div class="crd">
-                    <img src="srt1.webp" alt="Image2">
+                    <img src="srt1.webp" alt="Image2" onclick="show(this)">
                     <div class="crdText">
                         <h2>Cotton Trending Shirt's</h2>
                         <i class="fa-solid fa-star"></i>
@@ -63,7 +63,7 @@
 
                 
                     <div class="crd">
-                        <img src="srt2.webp" alt="Image2">
+                        <img src="srt2.webp" alt="Image2" onclick="show(this)">
                         <div class="crdText">
                             <h2>Cotton Trending Shirt's</h2>
                             <i class="fa-solid fa-star"></i>
@@ -77,7 +77,7 @@
 
                    
                         <div class="crd">
-                            <img src="srt6.webp" alt="Image2">
+                            <img src="srt6.webp" alt="Image2" onclick="show(this)">
                             <div class="crdText">
                                 <h2>Cotton Trending Shirt's</h2>
                                 <i class="fa-solid fa-star"></i>
@@ -92,13 +92,13 @@
         </div>
 
         <!-- Women Card -->
-        <div class="trend">
+        <div class="trend" id="trendSec">
             <div class="head">
                 <h1>Trends <span>Women's Wear</span></h1>
             </div>
             <div class="card">
                 <div class="crd">
-                    <img src="wn4.webp" alt="Image2">
+                    <img src="wn4.webp" alt="Image2" onclick="show(this)">
                     <div class="crdText">
                         <h2>Trending Girl Top's</h2>
                         <i class="fa-solid fa-star"></i>
@@ -112,7 +112,7 @@
 
                 
                     <div class="crd">
-                        <img src="wn5.webp" alt="Image2">
+                        <img src="wn5.webp" alt="Image2" onclick="show(this)">
                         <div class="crdText">
                             <h2>Trending Girl Top's</h2>
                             <i class="fa-solid fa-star"></i>
@@ -126,7 +126,7 @@
 
                     
                         <div class="crd">
-                            <img src="wn6.webp" alt="Image2">
+                            <img src="wn6.webp" alt="Image2" onclick="show(this)">
                             <div class="crdText">
                                 <h2>Trending Girl Top's</h2>
                                 <i class="fa-solid fa-star"></i>
@@ -140,8 +140,70 @@
             </div>
         </div>
 
+
+        <!-- About Us -->
+        <div class="about">
+            <div class="aboutUs">
+                <h1>#Know Us...</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, iure eos!</p>
+            </div>
+            <div class="me">
+                <img src="lap.png" alt="">
+                <div class="aboutText">
+                    <h1>Who we are ?</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos doloremque ipsam laudantium necessitatibus aperiam pariatur? Inventore alias vitae voluptatum molestiae dignissimos officia recusandae reiciendis? Ab incidunt voluptate perspiciatis iusto, ex error labore magnam officiis quibusdam est nam temporibus! Molestiae quam nam atque itaque corporis quisquam enim rerum. Harum neque, explicabo totam repudiandae odit, in consequuntur maiores dolorem dicta laborum ut, blanditiis et. Voluptate totam deleniti, in dolores ullam a. Sint!</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Contact -->
+        <div class="contact">
+            <div class="contactUs">
+                <h1>#Let's Connect</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, iure eos!</p>
+            </div>
+            <div class="contactMe">
+                <div class="contactText">
+                    <h1>Visit Our Office or Contact <br> Us Today</h1>
+                    <p>Address : Dablin Park, England, New york.</p>
+                    <p>Contact : dumiemail@gmail.com</p>
+                    <p>Number : 999999000011</p>
+                </div>
+                <img src="map.PNG" alt="">
+            </div>
+            <div class="form">
+                <h1>Connect with Us. Fill Form</h1>
+                <input type="text" placeholder="Enter Your FirstName"> <br>
+                <input type="text" placeholder="Enter Your LastName"> <br>
+                <input type="text" placeholder="Enter Your Email"> <br>
+                <input type="text" placeholder="Enter Your Number"> <br>
+                <input type="text" placeholder="Enter Your Address"> <br>
+                <button>Submit</button>
+            </div>
+        </div>
+
+
+        <!-- Cart -->
+        <div class="cart">
+            <img id="newImg" src="" alt="">
+            <div class="cartText">
+                <h1>Trends Offer : Trending Shop <br>Now</h1>
+                <h2>Special Price</h2>
+                <h2>$11</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                <div class="btn">
+                    <button>Buy Now</button>
+                    <button onclick="addCart()">Add to Cart</button>
+                </div>
+                <button class="back">Back</button>
+            </div>
+        </div>
+
         <!-- Blog -->
-        <div class="trend">
+        <div class="trends">
             <div class="head">
                 <h1>Trends Top <span>Blog's</span></h1>
             </div>
