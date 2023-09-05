@@ -5,7 +5,7 @@ let about = document.querySelector(".about");
 let contact = document.querySelector(".contact");
 let mainPage = document.querySelector(".main");
 
-
+// Home
 
 function homes(){
     mainPage.style.display = "flex";
@@ -22,11 +22,15 @@ function homes(){
     document.getElementById("contact").style.color = "black";
 }
 
+// Shop
+
 function shops() {
     mainPage.style.display = "none";
     blog.style.display = "none";
     about.style.display = "none";
     contact.style.display = "none";
+    card.style.display = "block";
+    card2.style.display = "block";
 
     document.getElementById("shop").style.color = "rgb(2, 173, 173)";
     document.getElementById("home").style.color = "black";
@@ -34,6 +38,9 @@ function shops() {
     document.getElementById("about").style.color = "black";
     document.getElementById("contact").style.color = "black";
 }
+
+
+// Blog
 
 function blogs() {
     mainPage.style.display = "none";
@@ -50,6 +57,7 @@ function blogs() {
     document.getElementById("contact").style.color = "black";
 }
 
+// About
 
 function abouts() {
     mainPage.style.display = "none";
@@ -66,6 +74,7 @@ function abouts() {
     document.getElementById("contact").style.color = "black";
 }
 
+// Contact
 
 function contacts() {
     mainPage.style.display = "none";
